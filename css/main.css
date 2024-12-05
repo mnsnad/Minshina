@@ -1,0 +1,438 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+header {
+    padding-top: 60px;
+    padding-bottom: 110px;
+    background: linear-gradient(to bottom, #7db9e8 25%, #2e7be8 80%);
+	margin-bottom: 50px;
+}
+
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo{
+	margin-bottom: 30px;
+}
+
+.head_title1{
+	font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.head_title2{
+	font-size: 50px;
+	font-weight: 700px;
+	letter-spacing: 2px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.head_title3{
+	font-size: 15px;
+	width: 380px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+
+.offer {
+    width: 450px;
+    color: white;
+}
+
+.button1{
+	background-color: rgb(255, 221, 0);
+	color: black;
+	width: 200px;
+	height: 50px;
+	text-decoration: none;
+	display: flex;
+    align-items: center;
+	padding-left: 43px;
+	transition: all 0.1s;
+}
+
+.header_img{
+	height: 400px;
+}
+
+/*-----------------------*/
+
+main{
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+
+.main_title1{
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 35px;
+}
+
+.blocks{
+	text-align: center;
+	width: 280px;
+}
+
+.main_img{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+
+/*-----------------------*/
+
+section{
+	padding-top: 60px;
+	padding-bottom: 90px;
+	background-color: rgb(230, 245, 253);
+}
+
+.sec_title1{
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 35px;
+	margin-top: 20px;
+}
+
+.inp{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+	width: 300px;
+	height: 40px;
+	margin-bottom: 10px;
+	text-indent: 15px;
+}
+
+.button2{
+	width: 300px;
+	height: 45px;
+	background-color: rgb(255, 221, 0);
+	border-width: 1px;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+/*-----------------*/
+
+footer {
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 50%,rgba(125,185,232,1) 100%);
+}
+
+.copyright {
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+/*--------------*/
+
+.button1:hover{
+	background-color: yellow;
+	transform: scale(1.1, 1.1);
+}
+
+.button2:hover{
+	background-color: yellow;
+	transform: translate(0, 5px)
+}
+
+/* Animation */
+
+.animation1{
+	animation-name: animation_1;
+	animation-duration: 2s;
+}
+
+@keyframes animation_1{
+	0% { 
+		transform: rotateY(2000deg); 
+	}
+	
+}
+
+.animation2{
+	animation-name: animation_2;
+	animation-duration: 2s;
+	position: relative;
+}
+
+@keyframes animation_2{
+	0% { 
+		left: 0px;
+		top: 0px;
+	}
+  	25% { 
+		left: 100px;
+	}
+	50% {
+		left: 100px;
+		top: 50px;
+	}
+	75% {
+		left: -100px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
+
+.animation3 {
+	animation-name: animation_3;
+	animation-duration: 2s;
+	
+}
+ 
+@keyframes animation_3 {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+
+/* Adaptation */
+/* Для мобильных устройств */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .offer {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .button1 {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .head_title3 {
+        width: 90%;
+        margin: 0 auto 40px; 
+    }
+    .header_img {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Main */
+    main {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .main_title1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .blocks {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+
+    /* Section */
+    section {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .sec_title1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .inp {
+        width: 90%;
+        margin: 0 auto;
+    }
+    input,
+    .button2 {
+        width: 100%;
+    }
+}
+
+/* Для мобильных устройств */
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    /* Header */
+    header {
+        padding-top: 50px;
+        padding-bottom: 120px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    .offer {
+        width: 45%;
+        text-align: left;
+    }
+    .header_img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Main */
+    main {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .main_title1 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    .blocks {
+        width: 30%;
+        margin: 0 3% 30px;
+    }
+
+    /* Section */
+    section {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .sec_title1 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    .inp {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Для планшетов */
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+    /* Header */
+	header {
+		padding-bottom: 130px;
+        padding-top: 45px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    .offer {
+        width: 45%;
+        text-align: left;
+    }
+    .header_img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Main */
+    main {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+    .main_title1 {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+    .blocks {
+        width: 25%;
+        margin: 0 2% 30px;
+    }
+
+    /* Section */
+    section {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+    .sec_title1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .inp {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .container { 
+        width: 1200px; 
+    } 
+    .head_title1 { 
+        font-size: 36px; 
+    } 
+    .head_title2 { 
+        font-size: 70px; 
+    } 
+    .blocks { 
+        width: 350px; 
+    } 
+}
+
+#formOutput1 {
+    font-size: 16px;
+    background: linear-gradient(to bottom, #abd5f6 25%, #89b4f0 80%);
+}
+
+#formOutput2 {
+    font-size: 16px;
+    background: linear-gradient(to bottom, #abd5f6 25%, #89b4f0 80%);
+}
+
+.separator {
+    height: 3px;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #0b3d84 25%, #0f61a0 80%);
+    /* margin: 0; Убираем отступы */
+}
+
